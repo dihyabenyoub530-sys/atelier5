@@ -8,7 +8,7 @@ void main() {
 
     int age = int.parse(saisie ?? "");
     print("Votre âge est : $age");
-  } on FormatException catch (e) {
+  } on FormatException {
     print("Format invalide : veuillez entrer un nombre.");
   } finally {
     print("Fin d'opération");
